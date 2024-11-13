@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package rmg;
 
-/**
- *
- * @author USER
- */
+import java.util.*;
+
 public class Customer {
-    
+    String customerId,name,email,phone;
+    List<Order>orders=new ArrayList<>();
+    void placeOrder(Order order){
+        orders.add(order);
+    }
+     List<Order> viewOrders(){
+         return orders;   
+     }
 }

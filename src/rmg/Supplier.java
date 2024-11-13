@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package rmg;
 
-/**
- *
- * @author USER
- */
+package rmg;
+import java.util.*;
 public class Supplier {
+    String id,name,contactInfo;
+    List<Fabric>suppliedFabrics=new ArrayList<>();
+    
+    void addFabric(Fabric fabric){
+        suppliedFabrics.add(fabric);
+    }
+    List<Fabric>getSuppliedFabrics(){
+        return suppliedFabrics;
+    }
+    
     
 }
